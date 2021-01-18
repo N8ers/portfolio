@@ -1,0 +1,27 @@
+name: DEPLOY TO PROD
+
+on:
+  pull_request:
+    branches: [main]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  firebase-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-node@main
+        
+      - name: installing dependencies...
+        run: npm install
+
+      - name: building project...
+        run: npm run build
+        
+      - uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

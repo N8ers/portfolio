@@ -1,5 +1,8 @@
 <template>
-  <div>I am Header</div>
+  <div>
+    <h2>Nathan Sheryak</h2>
+    <h4>Software Developer</h4>
+  </div>
 </template>
 
 <script>

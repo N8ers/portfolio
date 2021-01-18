@@ -1,0 +1,19 @@
+{
+  "projects": [
+    { 
+      "name": "Dashboard", 
+      "github": "https://github.com/N8ers/dashboard", 
+      "site": "https://dashboard-299215.web.app/welcome",
+      "imagePath": "",
+      "description": ""
+    },
+    { 
+      "name": "Brewster", 
+      "github": "https://github.com/N8ers/brewster", 
+      "site": "https://brewster-c62ae.firebaseapp.com/",
+      "imagePath": "",
+      "description": ""
+    }
+  ],
+  "blogs": []
+}

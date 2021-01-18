@@ -1,16 +1,25 @@
 <template>
   <div>
-    <h1>Welcome to my portfolio</h1>
-    <h3>Github Action, to Deploy main was successful!</h3>
-    <h4>... for real this time</h4>
+    <Header />
+    <Projects />
+    <Blogs />
+    <Contact />
   </div>
 </template>
 
 <script>
+import Header from './Header.vue';
+import Contact from './Contact.vue';
+import Projects from './Projects.vue';
+import Blogs from './Blogs.vue';
+
 export default {
   name: 'Home',
+  components: {
+    Header,
+    Projects,
+    Blogs,
+    Contact,
+  },
 };
 </script>
-
-<style>
-</style>

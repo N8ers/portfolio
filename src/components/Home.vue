@@ -6,12 +6,9 @@
     </div>
 
     <div v-else>
-      <div class="grid-container mb-5">
+      <div class="grid-container-header mb-5">
         <div class="green-gray-background grid-item">
           <Header class="cream" />
-        </div>
-        <div class="blue-gray-background grid-item">
-          <Contact />
         </div>
     </div>
     <Projects />

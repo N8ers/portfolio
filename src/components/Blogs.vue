@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import data from '../data.json';
+import data from '../../data';
 
 export default {
   name: 'Blogs',

@@ -1,18 +1,18 @@
-.grid-container {
+.grid-container-header {
   display: grid;
   // grid-template-columns: 25% 70%;
   // fr = fraction, this is perfered over %
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 5px;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(100px, auto);
 }
 
 .grid-container-portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
-  margin: 20px;
+  // column-gap: 20px;
+  // grid-auto-rows: minmax(100px, auto);
+  // margin: 20px;
 }
 
 .grid-container-blog {
@@ -26,9 +26,10 @@
 .grid-container-card {
   display: grid;
   grid-template-columns: 100px 3fr;
+  width: 600px;
   column-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
-  margin: 20px;
+  margin: 10px;
 }
 
 .grid-container-card-blog {

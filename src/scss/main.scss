@@ -1,0 +1,15 @@
+@import "colors";
+@import "components";
+@import "layout";
+@import "atomic";
+
+* {
+  margin: 0;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+}

@@ -1,0 +1,63 @@
+.grid-container-header {
+  display: grid;
+  // grid-template-columns: 25% 70%;
+  // fr = fraction, this is perfered over %
+  grid-template-columns: 1fr;
+  grid-column-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-container-portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // column-gap: 20px;
+  // grid-auto-rows: minmax(100px, auto);
+  // margin: 20px;
+}
+
+.grid-container-blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 20px;
+}
+
+.grid-container-card {
+  display: grid;
+  grid-template-columns: 100px 3fr;
+  width: 600px;
+  column-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 10px;
+}
+
+.grid-container-blog {
+  display: grid;
+  grid-template-columns: 3fr;
+  width: 600px;
+  column-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 10px;
+}
+
+.grid-container-card:nth-child(odd) {
+  margin-left: auto;
+  justify-self: right;
+}
+
+.grid-container-blog:nth-child(odd) {
+  margin-left: auto;
+  justify-self: right;
+}
+
+.grid-container-card-blog {
+  display: grid;
+  column-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 20px;
+}
+
+.grid-item {
+  // align-self: center;
+}

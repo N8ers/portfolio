@@ -3,9 +3,11 @@
     <h3 class="cream header ml-20">Portfolio</h3>
     <div class="grid-container-portfolio">
       <div
-        v-for="project in projects"
+        v-for="(project, index) in projects"
         :key="project.name"
-        class="green-gray-background grid-container-card">
+        class="green-gray-background grid-container-card"
+        :class="'grid-container-card-odd' && (index % 2 === 0)"
+        >
         <div>
           <div class="temp-img"></div>
         </div>

@@ -32,6 +32,25 @@
   margin: 10px;
 }
 
+.grid-container-blog {
+  display: grid;
+  grid-template-columns: 3fr;
+  width: 600px;
+  column-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 10px;
+}
+
+.grid-container-card:nth-child(odd) {
+  margin-left: auto;
+  justify-self: right;
+}
+
+.grid-container-blog:nth-child(odd) {
+  margin-left: auto;
+  justify-self: right;
+}
+
 .grid-container-card-blog {
   display: grid;
   column-gap: 5px;

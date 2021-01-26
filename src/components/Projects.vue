@@ -15,7 +15,7 @@
         <div class="align-left">
           <h2>{{ project.name }}</h2>
           <div>{{ project.description }}</div>
-          <div>
+          <div class="mt-10">
             <a @click="clickLink(project.github)" class="pointer">github</a> |
             <a @click="clickLink(project.site)" class="pointer">site</a>
           </div>

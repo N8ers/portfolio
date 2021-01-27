@@ -1,3 +1,55 @@
+.flex-container-portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-header {
+  flex-basis: 1220px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1256px) {
+  .flex-header {
+    flex-basis: 625px;
+    text-align: left;
+    padding-left: 25px;
+  }
+}
+
+.flex-container-card {
+  flex-basis: 600px;
+  margin: 10px;
+}
+
+.flex-container-card-empty {
+  flex-basis: 600px;
+  margin: 10px;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin: 10px;
+  }
+
+  .flex-container-card-empty {
+    width: 0px;
+    visibility: hidden;
+  }
+}
+
+.grid-project-card {
+  display: grid;
+  grid-template-columns: 100px 3fr;
+  column-gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 10px;
+}
+
 .grid-container-header {
   display: grid;
   // grid-template-columns: 25% 70%;

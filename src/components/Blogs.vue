@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h3 class="cream header ml-20">Blogs</h3>
-    <div class="grid-container-portfolio">
+    <div class="flex-container-portfolio">
+      <h3 class="cream flex-header">Blogs</h3>
       <div
         v-for="blog in blogs"
         :key="blog.name"
-        class="green-gray-background grid-container-blog">
+        class="green-gray-background flex-container-card">
         <div class="align-left pointer" @click="openBlogInNewTab(blog.url)">
           <h2>{{ blog.name }}</h2>
           <div>{{ blog.description }}</div>

@@ -11,6 +11,7 @@
           <div>{{ blog.description }}</div>
         </div>
       </div>
+      <div v-if="oddNumberOfBlogs" class="flex-container-card-empty">empty cell</div>
     </div>
   </div>
 </template>
@@ -20,14 +21,17 @@ import data from '../../data';
 
 export default {
   name: 'Blogs',
+  methods: {
+    openBlogInNewTab(url) {
+      alert(url);
+    },
+  },
   computed: {
     blogs() {
       return data.blogs;
     },
-  },
-  methods: {
-    openBlogInNewTab(url) {
-      alert(url);
+    oddNumberOfBlogs() {
+      return this.blogs.length % 2 !== 0;
     },
   },
 };

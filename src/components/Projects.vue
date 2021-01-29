@@ -9,13 +9,15 @@
         >
         <div class="grid-project-card">
           <div>
-            <div class="temp-img"></div>
+            <div class="temp-img">
+              <img v-if="project.image" :src="'../../projects/' + project.image" class="image" />
+            </div>
           </div>
 
           <div class="align-left">
             <h2>{{ project.name }}</h2>
             <div>{{ project.description }}</div>
-            <div class="mt-10">
+            <div class="portfolio-links">
               <a @click="clickLink(project.github)" class="pointer">github</a> |
               <a @click="clickLink(project.site)" class="pointer">site</a>
             </div>

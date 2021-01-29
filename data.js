@@ -5,7 +5,7 @@ export default {
       description: 'A landing page to organize your day',
       github: 'https://github.com/N8ers/dashboard',
       site: 'https://dashboard-299215.web.app/welcome',
-      imagePath: '',
+      image: 'dashboard.png',
     },
     {
       name: 'Brewster',

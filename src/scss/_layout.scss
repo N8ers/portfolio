@@ -2,19 +2,19 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1920px;
+}
+
+@media only screen and (min-width: 1920px) {
+  .portfolio-container {
+    margin: 0 auto;
+  }
 }
 
 .flex-header {
-  flex-basis: 1220px;
+  flex-basis: 1840px;
   text-align: left;
-}
-
-@media only screen and (max-width: 1256px) {
-  .flex-header {
-    flex-basis: 625px;
-    text-align: left;
-    padding-left: 25px;
-  }
+  // color: red;
 }
 
 .flex-container-card {
@@ -24,24 +24,9 @@
 }
 
 .flex-container-card-empty {
-  flex-basis: 600px;
+  flex-basis: 1220px;
   margin: 10px;
   visibility: hidden;
-}
-
-@media only screen and (max-width: 600px) {
-  .flex-container-card {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    margin: 10px;
-    min-height: 75px;
-  }
-
-  .flex-container-card-empty {
-    width: 0px;
-    visibility: hidden;
-  }
 }
 
 .grid-project-card {
@@ -50,6 +35,52 @@
   column-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
   margin: 10px;
+}
+
+@media only screen and (max-width: 1876px) {
+  .flex-header {
+    flex-basis: 1230px;
+    text-align: left;
+    padding-left: 10px;
+    // color: green;
+  }
+
+  .flex-container-card-empty {
+    flex-basis: 600px;
+    margin: 10px;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 1256px) {
+  .flex-header {
+    flex-basis: 610px;
+    text-align: left;
+    padding-left: 10px;
+    // color: indigo;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .flex-container-card {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin: 10px;
+    min-height: 75px;
+  }
+
+  .flex-header {
+    flex-basis: 600px;
+    text-align: left;
+    padding-left: 10px;
+    // color: violet;
+  }
+
+  .flex-container-card-empty {
+    width: 0px;
+    visibility: hidden;
+  }
 }
 
 .grid-container-header {
@@ -61,61 +92,61 @@
   grid-auto-rows: minmax(100px, auto);
 }
 
-.grid-container-portfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  // column-gap: 20px;
-  // grid-auto-rows: minmax(100px, auto);
-  // margin: 20px;
-}
+// .grid-container-portfolio {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   // column-gap: 20px;
+//   // grid-auto-rows: minmax(100px, auto);
+//   // margin: 20px;
+// }
 
-.portfolio-links {
-  bottom: 0;
-}
+// .portfolio-links {
+//   bottom: 0;
+// }
 
-.grid-container-blog {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
-  margin: 20px;
-}
+// .grid-container-blog {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   column-gap: 20px;
+//   grid-auto-rows: minmax(100px, auto);
+//   margin: 20px;
+// }
 
-.grid-container-card {
-  display: grid;
-  grid-template-columns: 100px 3fr;
-  width: 600px;
-  column-gap: 5px;
-  grid-auto-rows: minmax(100px, auto);
-  margin: 10px;
-}
+// .grid-container-card {
+//   display: grid;
+//   grid-template-columns: 100px 3fr;
+//   width: 600px;
+//   column-gap: 5px;
+//   grid-auto-rows: minmax(100px, auto);
+//   margin: 10px;
+// }
 
-.grid-container-blog {
-  display: grid;
-  grid-template-columns: 3fr;
-  width: 600px;
-  column-gap: 5px;
-  grid-auto-rows: minmax(100px, auto);
-  margin: 10px;
-}
+// .grid-container-blog {
+//   display: grid;
+//   grid-template-columns: 3fr;
+//   width: 600px;
+//   column-gap: 5px;
+//   grid-auto-rows: minmax(100px, auto);
+//   margin: 10px;
+// }
 
-.grid-container-card:nth-child(odd) {
-  margin-left: auto;
-  justify-self: right;
-}
+// .grid-container-card:nth-child(odd) {
+//   margin-left: auto;
+//   justify-self: right;
+// }
 
-.grid-container-blog:nth-child(odd) {
-  margin-left: auto;
-  justify-self: right;
-}
+// .grid-container-blog:nth-child(odd) {
+//   margin-left: auto;
+//   justify-self: right;
+// }
 
-.grid-container-card-blog {
-  display: grid;
-  column-gap: 5px;
-  grid-auto-rows: minmax(100px, auto);
-  margin: 20px;
-}
+// .grid-container-card-blog {
+//   display: grid;
+//   column-gap: 5px;
+//   grid-auto-rows: minmax(100px, auto);
+//   margin: 20px;
+// }
 
-.grid-item {
-  // align-self: center;
-}
+// .grid-item {
+//   // align-self: center;
+// }

@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="portfolio-container">
     <div class="flex-container-portfolio">
+      <!-- <h3 class="flex-header">Portfolio</h3> -->
       <h3 class="cream flex-header">Portfolio</h3>
       <div
         v-for="(project) in projects"

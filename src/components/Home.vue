@@ -3,6 +3,7 @@
   <div v-if="gridDemo" class="grid-container">
     <div class="green-gray-background">HEY 1</div>
     <div class="blue-gray-background">HEY 2</div>
+
   </div>
 
   <div v-else>
@@ -11,7 +12,7 @@
         <Header class="cream" />
       </div>
     </div>
-    <Projects />
+    <Projects :screenWidth="screenWidth" />
     <Blogs />
     <Contact class="cream h-100" />
   </div>
@@ -34,7 +35,21 @@ export default {
   data() {
     return {
       gridDemo: false,
+      screenWidth: null,
     };
+  },
+  methods: {
+    myEventHandler(e) {
+      console.log('e ', e);
+      this.screenWidth = e.srcElement.innerWidth;
+    },
+  },
+  created() {
+    this.screenWidth = window.innerWidth;
+    window.addEventListener('resize', this.myEventHandler);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.myEventHandler);
   },
 };
 </script>

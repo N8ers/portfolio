@@ -13,7 +13,7 @@
     </div>
     <Projects />
     <Blogs />
-    <Contact class="cream h-100" />
+    <Contact class="cream h-100 contact-footer" />
   </div>
 </template>
 

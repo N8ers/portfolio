@@ -19,8 +19,8 @@
             <h2>{{ project.name }}</h2>
             <div>{{ project.description }}</div>
             <div class="portfolio-links">
-              <a @click="clickLink(project.github)" class="pointer">github</a> |
-              <a @click="clickLink(project.site)" class="pointer">site</a>
+              <a :href="project.github" class="pointer">github</a> |
+              <a :href="project.site" class="pointer">site</a>
             </div>
           </div>
         </div>
@@ -36,9 +36,6 @@ import data from '../../data';
 export default {
   name: 'Projects',
   methods: {
-    clickLink(url) {
-      window.open(url, '_blank');
-    },
     lastCartIsOdd(index) {
       const isLastProject = !!(index === (this.projects.length - 1));
       const lastProjectIsOdd = !!(index % 2 === 0);

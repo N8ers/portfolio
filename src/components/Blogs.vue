@@ -6,10 +6,12 @@
         v-for="blog in blogs"
         :key="blog.name"
         class="green-gray-background flex-container-card">
-        <div class="align-left pointer" @click="openBlogInNewTab(blog.url)">
-          <h2>{{ blog.name }}</h2>
-          <div>{{ blog.description }}</div>
-        </div>
+        <a :href="blog.url" class="link">
+          <div class="align-left pointer">
+            <h2>{{ blog.name }}</h2>
+            <div>{{ blog.description }}</div>
+          </div>
+        </a>
       </div>
       <div v-if="oddNumberOfBlogs" class="flex-container-card-empty">empty cell</div>
     </div>

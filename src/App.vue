@@ -3,12 +3,15 @@
     
     <Header />
 
-    <div>
-      <About />
-      <Projects />
-      <Blogs />
-      <Contact />
-    </div>
+    <!-- Manage this better Nathan -->
+    <br>
+    <br>
+    <br>
+
+    <About />
+    <Projects />
+    <Blogs />
+    <Contact />
 
   </v-app>
 </template>

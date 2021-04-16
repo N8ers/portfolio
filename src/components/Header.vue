@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar color="deep-purple accent-4" dense dark>
+  <v-app-bar color="deep-purple accent-4" dense dark fixed app>
 
     <v-app-bar-title>Nathan Sheryak</v-app-bar-title>
 

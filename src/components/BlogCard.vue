@@ -3,6 +3,7 @@
     <v-card
       class="mx-auto"
       max-width="400"
+      min-width="350"
     >
       <v-card-title class="grey lighten-1">{{ cardData.name }}</v-card-title>
 

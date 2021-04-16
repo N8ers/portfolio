@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="blogs">
     <h1>BLOGS</h1>
     
     <v-row>

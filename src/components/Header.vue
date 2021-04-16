@@ -7,10 +7,10 @@
 
     <div>
       <v-tabs>
-        <v-tab>About</v-tab>
-        <v-tab>Projects</v-tab>
-        <v-tab>Blogs</v-tab>
-        <v-tab>Contact</v-tab>
+        <v-tab @click="$vuetify.goTo('#about')">About</v-tab>
+        <v-tab @click="$vuetify.goTo('#projects')">Projects</v-tab>
+        <v-tab @click="$vuetify.goTo('#blogs')">Blogs</v-tab>
+        <v-tab @click="$vuetify.goTo('#contact')">Contact</v-tab>
       </v-tabs> 
     </div>
 

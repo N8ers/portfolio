@@ -1,5 +1,5 @@
 <template>
-  <div class="green-gray-background">
+  <div id="contact">
     <!-- <div class="flex-container-portfolio">
       <h3 class="cream flex-header">Contact</h3>
       <div class="flex-container-card">

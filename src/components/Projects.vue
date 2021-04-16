@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="projects">
     <h1>Projects</h1>
 
     <v-row>

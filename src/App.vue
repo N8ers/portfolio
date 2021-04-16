@@ -1,19 +1,38 @@
 <template>
-  <div id="app" class="dark-gray-background">
-    <Home />
-  </div>
+  <v-app>
+    
+    <Header />
+
+    <div>
+      <About />
+      <Projects />
+      <Blogs />
+      <Contact />
+    </div>
+
+  </v-app>
 </template>
 
 <script>
-import Home from './components/Home.vue';
+import Header from './components/Header.vue';
+import Projects from './components/Projects.vue';
+import Blogs from './components/Blogs.vue';
+import Contact from './components/Contact.vue';
+import About from './components/About.vue';
 
 export default {
+  name: 'App',
+
   components: {
-    Home,
+    Header,
+    Projects,
+    Blogs,
+    Contact,
+    About
   },
+
+  data: () => ({
+    //
+  }),
 };
 </script>
-
-<style lang="scss">
-  @import './scss/main.scss';
-</style>

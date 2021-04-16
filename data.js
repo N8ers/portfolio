@@ -12,7 +12,7 @@ export default {
       description: 'Find local breweries, no matter where life takes you',
       github: 'https://github.com/N8ers/brewster',
       site: 'https://brewster-c62ae.firebaseapp.com/',
-      imagePath: '',
+      image: 'dashboard.png',
     },
     // {
     //   name: 'Chat App',

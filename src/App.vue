@@ -2,6 +2,7 @@
   <v-app color="deep-purple">
     
     <Header />
+    <NavDrawer />
 
     <!-- Manage this better Nathan -->
     <br>
@@ -24,31 +25,29 @@ import Projects from './components/Projects.vue';
 import Blogs from './components/Blogs.vue';
 import Contact from './components/Contact.vue';
 import About from './components/About.vue';
+import NavDrawer from './components/NavDrawer.vue'
 
 export default {
   name: 'App',
-
   components: {
     Header,
     Projects,
     Blogs,
     Contact,
-    About
+    About,
+    NavDrawer
   },
-
-  data: () => ({
-    //
-  }),
+  data: () => ({ }),
   created() {
     console.log(`
-      /////////////////////////////////////////////////////////////////////////////
-      // Hello There!                                                            //
-      // Welcome to my portfolio.                                                //
-      // Feel free to look around and see some of my work.                       //
-      // The site is still under some construction, so please ignore the errors! //
-      //                                                                         //
-      // I hope to be in touch, Nathan.                                           //
-      /////////////////////////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////
+      // Hello There!                                                       //
+      // Welcome to my portfolio.                                           //
+      // Feel free to look around and see some of my work.                  //
+      // The site is still under construction, so please ignore the errors! //
+      //                                                                    //
+      // I hope to be in touch, Nathan.                                     //
+      ////////////////////////////////////////////////////////////////////////
     `)
   }
 };

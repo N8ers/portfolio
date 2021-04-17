@@ -2,7 +2,7 @@
   <div>
     <v-card
       class="mx-auto"
-      max-width="400"
+      max-width="350"
     >
       <v-img
         class="white--text align-end grey lighten-1"

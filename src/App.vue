@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app color="deep-purple">
     
     <Header />
 
@@ -8,9 +8,12 @@
     <br>
     <br>
 
-    <About />
-    <Projects />
-    <Blogs />
+    <div class="body-content">
+      <About />
+      <Projects />
+      <Blogs />
+    </div>
+
     <Contact />
 
   </v-app>
@@ -39,3 +42,11 @@ export default {
   }),
 };
 </script>
+
+<style>
+.body-content {
+  max-width: 1250px;
+  margin: 20px auto;
+  padding: 0px 50px;
+}
+</style>

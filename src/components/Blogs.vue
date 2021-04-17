@@ -1,6 +1,6 @@
 <template>
   <div id="blogs">
-    <h1>BLOGS</h1>
+    <h1>Blogs</h1>
     
     <v-row>
       <v-col v-for="cardData in cardsData" :key="cardData.name">

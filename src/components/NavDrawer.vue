@@ -32,18 +32,16 @@ export default {
   name: 'NavDrawer',
   components: {
   },
-  data: () => ({ 
-    lastDrawerValue: null
-  }),
+  data: () => ({ }),
   methods: {
     navigationDrawerSelected: function (location) {
       this.$vuetify.goTo(`#${location}`)
       this.$store.dispatch('toggleDrawer', false)
     },
     toggleDrawer: function (value) {
-      if (this.drawer !== value) {
-        this.$store.dispatch('toggleDrawer', true)
-      }
+      console.log('drawer: ', this.drawer)
+      console.log('value: ', value)
+      this.$store.dispatch('toggleDrawer', value)
     }
   },
   computed: {

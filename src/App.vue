@@ -12,9 +12,8 @@
       <About />
       <Projects />
       <Blogs />
+      <Contact />
     </div>
-
-    <Contact />
 
   </v-app>
 </template>

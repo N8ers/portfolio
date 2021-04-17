@@ -1,16 +1,15 @@
 <template>
-  <v-footer dark padless id="contact">
-    <v-card flat tile class="indigo lighten-1 white--text text-center">
-      <h1>Contact</h1>
-      <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
+  <div id="contact">
+    <h1>About</h1>
+    <p>Please reach out if you're interested in learning more about me and my work</p>
+    <v-card-text>
+        <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
           <v-icon size="24px">
             {{ icon }}
           </v-icon>
         </v-btn>
       </v-card-text>
-    </v-card>
-  </v-footer> 
+  </div>
 </template>
 
 <script>

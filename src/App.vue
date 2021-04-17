@@ -39,6 +39,18 @@ export default {
   data: () => ({
     //
   }),
+  created() {
+    console.log(`
+      /////////////////////////////////////////////////////////////////////////////
+      // Hello There!                                                            //
+      // Welcome to my portfolio.                                                //
+      // Feel free to look around and see some of my work.                       //
+      // The site is still under some construction, so please ignore the errors! //
+      //                                                                         //
+      // I hope to be in touch, Nathan.                                           //
+      /////////////////////////////////////////////////////////////////////////////
+    `)
+  }
 };
 </script>
 

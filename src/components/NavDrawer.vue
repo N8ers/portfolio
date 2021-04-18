@@ -1,5 +1,10 @@
-<template>
-  <v-navigation-drawer :value="drawer" @input="toggleDrawer($event)" right absolute>
+<template app>
+  <v-navigation-drawer 
+    v-if="drawer"
+    :value="drawer" 
+    @input="toggleDrawer($event)" 
+    right app
+  >
     <v-list>
       <v-list-item @click="navigationDrawerSelected('about')">
         <v-list-item-content>
@@ -39,31 +44,21 @@ export default {
       this.$store.dispatch('toggleDrawer', false)
     },
     toggleDrawer: function (value) {
-      console.log('drawer: ', this.drawer)
-      console.log('value: ', value)
-      this.$store.dispatch('toggleDrawer', value)
+      if (this.$vuetify.breakpoint.width < 1263) {
+        this.$store.dispatch('toggleDrawer', value)
+      } 
     }
   },
   computed: {
     ...mapState({
       drawer: state => state.drawerIsOpen
     })
-
-
-    // drawer: {
-    //   get () {
-    //     console.log('GET')
-    //     let value = this.$store.state.drawerIsOpen
-    //     // this.lastDrawerValue = value
-    //     return value
-    //   },
-    //   set (newValue) {
-    //     console.log('SET ', newValue)
-    //     if (newValue !== this.lastDrawerValue) {
-    //       return this.$store.dispatch('toggleDrawer', newValue)
-    //     }
-    //   }
-    // } 
   }
 };
 </script>
+
+<style>
+.mt-50 {
+  margin-top: 50px;
+}
+</style>

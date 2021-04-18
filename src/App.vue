@@ -2,13 +2,11 @@
   <v-app color="deep-purple">
     
     <Header />
+        <!-- Manage this better Nathan -->
+    <br>
+    <br>
+    <br>
     <NavDrawer />
-
-    <!-- Manage this better Nathan -->
-    <br>
-    <br>
-    <br>
-
     <div class="body-content">
       <About />
       <Projects />

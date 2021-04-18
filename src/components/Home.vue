@@ -1,19 +1,11 @@
 <template>
 
-  <div v-if="gridDemo" class="grid-container">
-    <div class="green-gray-background">HEY 1</div>
-    <div class="blue-gray-background">HEY 2</div>
-  </div>
-
-  <div v-else>
-    <div class="grid-container-header mb-5">
-      <div class="green-gray-background grid-item">
-        <Header class="cream" />
-      </div>
-    </div>
+  <div>
+    <Header />
+    <About />
     <Projects />
     <Blogs />
-    <Contact class="cream h-100 contact-footer" />
+    <Contact />
   </div>
 </template>
 
@@ -22,6 +14,7 @@ import Header from './Header.vue';
 import Contact from './Contact.vue';
 import Projects from './Projects.vue';
 import Blogs from './Blogs.vue';
+import About from './About.vue';
 
 export default {
   name: 'Home',
@@ -30,6 +23,7 @@ export default {
     Projects,
     Blogs,
     Contact,
+    About
   },
   data() {
     return {

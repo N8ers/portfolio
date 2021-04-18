@@ -1,22 +1,32 @@
 <template>
-  <div class="green-gray-background">
-    <div class="flex-container-portfolio">
-      <h3 class="cream flex-header">Contact</h3>
-      <div class="flex-container-card">
-        <div class="contact-info">
-          If you want to get in touch or to see more projects, <br> feel free to reach out on
-          <a href="https://www.linkedin.com/in/nathan-sheryak/" target="_blank">LinkedIn</a>
-          or visit my
-          <a href="https://github.com/N8ers" target="_blank">GitHub</a>
-        </div>
-      </div>
+  <div id="contact">
+    <h1>Contact</h1>
+    <p>Please reach out if you're interested in learning more about me and my work</p>
+    <div class="text-center">
+      <v-btn 
+        v-for="icon in icons" 
+        :key="icon" 
+        :href="icon.url" 
+        target="_blank" 
+        class="mx-4" 
+        icon
+      >
+        <v-icon size="24px">
+          {{ icon.name }}
+        </v-icon>
+      </v-btn>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
   name: 'Contact',
+  data: () => ({
+    icons: [
+      { name: 'mdi-github', url: 'https://github.com/N8ers' },
+      { name: 'mdi-linkedin', url: 'https://www.linkedin.com/in/nathan-sheryak/' }
+    ],
+  }),
 };
 </script>

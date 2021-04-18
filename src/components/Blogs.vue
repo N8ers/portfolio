@@ -1,40 +1,30 @@
 <template>
-  <div>
-    <div class="flex-container-portfolio">
-      <h3 class="cream flex-header">Blogs</h3>
-      <div
-        v-for="blog in blogs"
-        :key="blog.name"
-        class="green-gray-background flex-container-card">
-        <a :href="blog.url" class="link">
-          <div class="align-left pointer">
-            <h2>{{ blog.name }}</h2>
-            <div>{{ blog.description }}</div>
-          </div>
-        </a>
-      </div>
-      <div v-if="oddNumberOfBlogs" class="flex-container-card-empty">empty cell</div>
-    </div>
+  <div id="blogs">
+    <h1>Blogs</h1>
+    
+    <v-row>
+      <v-col v-for="cardData in cardsData" :key="cardData.name">
+        <BlogCard :cardData="cardData" />
+      </v-col>
+    </v-row>
   </div>
 </template>
 
 <script>
 import data from '../../data';
+import BlogCard from './BlogCard';
 
 export default {
   name: 'Blogs',
-  methods: {
-    openBlogInNewTab(url) {
-      alert(url);
-    },
+  components: {
+    BlogCard
   },
-  computed: {
-    blogs() {
-      return data.blogs;
-    },
-    oddNumberOfBlogs() {
-      return this.blogs.length % 2 !== 0;
-    },
+  data() {
+    return {
+      cardsData: data.blogs
+    };
   },
+  methods: { },
+  computed: { }
 };
 </script>

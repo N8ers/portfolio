@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar>       
+    <v-app-bar app>       
       <v-toolbar-title>
         <span class="font-weight-medium">Nathan Sheryak</span> 
         <span class="grey--text"> | software developer</span>
@@ -39,6 +39,7 @@ export default {
       this.drawer = false
     },
     openDrawer: function () {
+      console.log('openDrawer from Header')
       this.$store.dispatch('toggleDrawer', true)
     }
   },

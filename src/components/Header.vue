@@ -39,7 +39,6 @@ export default {
       this.drawer = false
     },
     openDrawer: function () {
-      console.log('openDrawer from Header')
       this.$store.dispatch('toggleDrawer', true)
     }
   },

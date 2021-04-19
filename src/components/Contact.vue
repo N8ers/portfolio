@@ -5,7 +5,7 @@
     <div class="text-center">
       <v-btn 
         v-for="icon in icons" 
-        :key="icon" 
+        :key="icon.name" 
         :href="icon.url" 
         target="_blank" 
         class="mx-4" 

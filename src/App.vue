@@ -55,6 +55,6 @@ export default {
 .body-content {
   max-width: 1250px;
   margin: 20px auto;
-  padding: 0px 50px;
+  padding: 0px 25px;
 }
 </style>

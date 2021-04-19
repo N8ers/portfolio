@@ -3,7 +3,8 @@
     <v-app-bar app>       
       <v-toolbar-title>
         <span class="font-weight-medium">Nathan Sheryak</span> 
-        <span class="grey--text"> | software developer</span>
+        <span v-if="this.$vuetify.breakpoint.width > 450" class="grey--text"> | software developer</span>
+        <span v-else class="grey--text"> | software dev</span>
       </v-toolbar-title>
     
       <v-spacer></v-spacer>

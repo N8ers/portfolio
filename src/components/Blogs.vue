@@ -3,11 +3,11 @@
     <h1>Blogs</h1>
     
     <v-row>
-      <v-col v-for="cardData in cardsData" :key="cardData.name">
+      <v-col class="d-flex justify-left" v-for="cardData in cardsData" :key="cardData.name">
         <BlogCard :cardData="cardData" />
       </v-col>
-      <v-spacer />
     </v-row>
+    
   </div>
 </template>
 

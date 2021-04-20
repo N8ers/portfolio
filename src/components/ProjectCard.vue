@@ -2,7 +2,7 @@
   <div>
     <v-card
       class="mx-auto"
-      max-width="350"
+      width="350"
     >
       <v-img
         class="white--text align-end grey lighten-1"
@@ -18,11 +18,11 @@
       </v-card-text>
 
       <v-card-actions>
-        <v-btn color="orange" :href="cardData.github" target="_blank">
+        <v-btn :href="cardData.github" target="_blank">
           GitHub
         </v-btn>
 
-        <v-btn color="orange" :href="cardData.site" target="_blank">
+        <v-btn :href="cardData.site" target="_blank">
           Demo
         </v-btn>
       </v-card-actions>

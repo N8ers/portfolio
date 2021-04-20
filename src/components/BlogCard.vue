@@ -2,8 +2,7 @@
   <div>
     <v-card
       class="mx-auto"
-      max-width="400"
-      min-width="350"
+      width="350"
     >
       <v-card-title class="grey lighten-1">{{ cardData.name }}</v-card-title>
 
@@ -12,7 +11,7 @@
       </v-card-text>
 
       <v-card-actions>
-        <v-btn color="orange" :href="cardData.url" target="_blank">
+        <v-btn :href="cardData.url" target="_blank">
           Link
         </v-btn>
       </v-card-actions>

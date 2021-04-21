@@ -1,9 +1,6 @@
 <template>
   <div>
-    <v-card
-      class="mx-auto"
-      width="350"
-    >
+    <v-card class="mx-auto" width="350">
       <v-img
         class="white--text align-end grey lighten-1"
         height="200px"

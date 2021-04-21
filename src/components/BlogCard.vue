@@ -1,9 +1,6 @@
 <template>
   <div>
-    <v-card
-      class="mx-auto"
-      width="350"
-    >
+    <v-card class="mx-auto" width="350">
       <v-card-title class="grey lighten-1">{{ cardData.name }}</v-card-title>
 
       <v-card-text class="text--primary">

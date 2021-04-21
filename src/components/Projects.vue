@@ -3,7 +3,7 @@
     <h1>Projects</h1>
 
     <v-row>
-      <v-col class="d-flex justify-left" v-for="cardData in cardsData" :key="cardData.name">
+      <v-col class="d-sm-flex justify-left" v-for="cardData in cardsData" :key="cardData.name">
         <ProjectCard :cardData="cardData" />
       </v-col>
     </v-row>

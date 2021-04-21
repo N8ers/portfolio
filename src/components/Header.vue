@@ -15,7 +15,7 @@
       ></v-app-bar-nav-icon>
 
       <div v-if="!this.drawer">
-        <v-tabs align-with-title class="d-none d-md-flex">
+        <v-tabs align-with-title class="d-none d-md-flex" background-color="grey lighten-4">
           <v-tab @click="$vuetify.goTo('#about')">About</v-tab>
           <v-tab @click="$vuetify.goTo('#projects')">Projects</v-tab>
           <v-tab @click="$vuetify.goTo('#blogs')">Blogs</v-tab>

@@ -2,12 +2,23 @@
   <v-app color="deep-purple">
     
     <Header />
-        <!-- Manage this better Nathan -->
-    <br>
     <br>
     <br>
     <NavDrawer />
+    
     <div class="body-content">
+      <v-col>
+        <v-container class="px-0 text-right" fluid>
+          <v-row class="justify-end">
+            <v-spacer></v-spacer>
+            <div>
+              <p class="mb-0">{{ themeLabel }}</p>
+              <v-switch class="mt-0" :value="darkThemeEnabled" @change="toggleTheme"></v-switch>
+            </div>
+          </v-row>
+        </v-container>
+      </v-col>
+
       <About />
       <Projects />
       <Blogs />
@@ -23,7 +34,7 @@ import Projects from './components/Projects.vue';
 import Blogs from './components/Blogs.vue';
 import Contact from './components/Contact.vue';
 import About from './components/About.vue';
-import NavDrawer from './components/NavDrawer.vue'
+import NavDrawer from './components/NavDrawer.vue';
 
 export default {
   name: 'App',
@@ -35,14 +46,30 @@ export default {
     About,
     NavDrawer
   },
-  data: () => ({ }),
+  data: () => ({
+    darkThemeEnabled: false
+  }),
+  methods: {
+    toggleTheme: function () {
+      this.darkThemeEnabled = !this.darkThemeEnabled
+      this.$vuetify.theme.dark = this.darkThemeEnabled
+    }
+  },
+  computed: {
+    themeLabel: function () {
+      if (this.darkThemeEnabled) {
+        return "toggle light theme"
+      } 
+      return "toggle dark theme"
+    }
+  },
   created() {
     console.log(`
       ////////////////////////////////////////////////////////////////////////
       // Hello There!                                                       //
       // Welcome to my portfolio.                                           //
       // Feel free to look around and see some of my work.                  //
-      // The site is still under construction, so please ignore the errors! //
+      // The site is still under construction, so please ignore any errors! //
       //                                                                    //
       // I hope to be in touch, Nathan.                                     //
       ////////////////////////////////////////////////////////////////////////
@@ -51,10 +78,13 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .body-content {
   max-width: 1250px;
   margin: 20px auto;
   padding: 0px 25px;
 }
+
+$color-pack: false;
+@import './scss/main.scss';
 </style>

@@ -1,33 +1,36 @@
 <template>
-
   <div>
+
     <Header />
     <About />
     <Projects />
+
+
     <Blogs />
     <Contact />
+
   </div>
 </template>
 
 <script>
-import Header from './Header.vue';
-import Contact from './Contact.vue';
 import Projects from './Projects.vue';
-import Blogs from './Blogs.vue';
+import Contact from './Contact.vue';
+import Header from './Header.vue';
 import About from './About.vue';
+import Blogs from './Blogs.vue';
 
 export default {
   name: 'Home',
   components: {
-    Header,
     Projects,
-    Blogs,
     Contact,
-    About
+    Header,
+    About,
+    Blogs
   },
   data() {
     return {
-      gridDemo: false,
+      darkMode: false,
     };
   },
 };

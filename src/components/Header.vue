@@ -16,10 +16,10 @@
 
       <div v-if="!this.drawer">
         <v-tabs align-with-title class="d-none d-md-flex" background-color="header">
-          <v-tab @click="$vuetify.goTo('#about')">About</v-tab>
-          <v-tab @click="$vuetify.goTo('#projects')">Projects</v-tab>
-          <v-tab @click="$vuetify.goTo('#blogs')">Blogs</v-tab>
-          <v-tab @click="$vuetify.goTo('#contact')">Contact</v-tab>
+          <v-tab @click="navigationDrawerSelected('about')">About</v-tab>
+          <v-tab @click="navigationDrawerSelected('projects')">Projects</v-tab>
+          <v-tab @click="navigationDrawerSelected('blogs')">Blogs</v-tab>
+          <v-tab @click="navigationDrawerSelected('contact')">Contact</v-tab>
         </v-tabs> 
       </div>
 
@@ -32,7 +32,7 @@ export default {
   name: 'Header',
    data: () => ({
     drawer: false,
-    items: ['About', 'Projects', 'Blogs', 'Contact'],
+    sections: ['about', 'projects', 'blogs', 'contact'],
   }),
   methods: {
     navigationDrawerSelected: function (location) {

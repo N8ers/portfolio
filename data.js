@@ -76,5 +76,13 @@ export default {
     //   description: 'what it is & why you should be using it',
     //   url: '',
     // },
+    //   name: 'v-nav-drawer',
+    //   description: '',
+    //   url: '',
+    // },
+    //   name: 'create a lightmode/darkmode switch, using vuetify',
+    //   description: '',
+    //   url: '',
+    // },
   ],
 };

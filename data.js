@@ -56,6 +56,11 @@ export default {
       description: 'A beginners guide to using Git.',
       url: 'https://medium.com/@nathanraysheryak/enough-to-git-you-started-32d941730cb7',
     },
+    {
+      name: 'Crafting a Dark Mode switch with Vuetify',
+      description: 'How to make a "Dark Mode" siwtch with a vuetify app!',
+      url: 'https://dev.to/nathan_sheryak/crafting-a-dark-mode-switch-with-vuetify-2ea8',
+    },
     // {
     //   name: 'How to build your own NPM package',
     //   description: 'A Guide to publishing an npm package of your own',

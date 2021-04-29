@@ -7,6 +7,14 @@ import '../scss/main.scss'
 Vue.use(Vuetify);
 
 export default new Vuetify({
+  breakpoint: {
+    thresholds: {
+      xs: 790,
+      sm: 960,
+      md: 1280,
+      lg: 1920,
+    }
+  },
   theme: {
     themes: {
       light: {

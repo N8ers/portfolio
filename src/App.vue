@@ -20,9 +20,9 @@
       </v-col>
 
       <About />
-      <Projects />
-      <Blogs />
-      <Contact />
+      <Projects class="mt-5" />
+      <Blogs class="mt-5" />
+      <Contact class="mt-5" />
     </div>
 
   </v-app>

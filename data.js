@@ -14,6 +14,13 @@ export default {
       site: 'https://brewster-c62ae.firebaseapp.com/',
       image: 'brewster.png',
     },
+    {
+      name: 'Vue Electron Weather',
+      description: 'An electron weather app to check the forcast.',
+      github: 'https://github.com/N8ers/vue-electron-weather',
+      // site: 'https://brewster-c62ae.firebaseapp.com/',
+      image: 'vue-elec-weather.png',
+    },
     // {
     //   name: 'Chat App',
     //   description: 'Chat with your friends using this real time chat app',
@@ -61,6 +68,11 @@ export default {
       description: 'How to make a "Dark Mode" siwtch with a vuetify app!',
       url: 'https://dev.to/nathan_sheryak/crafting-a-dark-mode-switch-with-vuetify-2ea8',
     },
+    // {
+    //   name: 'How to save user data in an electron app',
+    //   description: 'A way to save user preferences on an electron app w/o internet or db',
+    //   url: '',
+    // },
     // {
     //   name: 'How to build your own NPM package',
     //   description: 'A Guide to publishing an npm package of your own',

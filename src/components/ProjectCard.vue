@@ -21,7 +21,7 @@
           GitHub
         </v-btn>
 
-        <v-btn :href="cardData.site" target="_blank">
+        <v-btn v-if="cardData.site" :href="cardData.site" target="_blank">
           Demo
         </v-btn>
       </v-card-actions>

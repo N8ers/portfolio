@@ -30,7 +30,10 @@
 <script>
 export default {
   name: 'Header',
-   data: () => ({
+  metaInfo: {
+    title: 'Header'
+  },
+  data: () => ({
     drawer: false,
     sections: ['about', 'projects', 'blogs', 'contact'],
   }),

@@ -22,6 +22,9 @@
 <script>
 export default {
   name: 'Contact',
+  metaInfo: {
+    title: 'Contact'
+  },
   data: () => ({
     icons: [
       { name: 'mdi-github', url: 'https://github.com/N8ers' },

@@ -19,6 +19,9 @@ import ProjectCard from './ProjectCard';
 
 export default {
   name: 'Projects',
+  metaInfo: {
+    title: 'Projects'
+  },
   components: {
     ProjectCard
   },

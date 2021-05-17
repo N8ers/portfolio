@@ -21,6 +21,9 @@ import BlogCard from './BlogCard';
 
 export default {
   name: 'Blogs',
+  metaInfo: {
+    title: 'Blogs'
+  },
   components: {
     BlogCard
   },

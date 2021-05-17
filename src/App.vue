@@ -38,6 +38,18 @@ import NavDrawer from './components/NavDrawer.vue';
 
 export default {
   name: 'App',
+  metaInfo: {
+    title: 'Nathan Sheryak Software Developer',
+    titleTemplate: '%s | Nathan Sheryak Portfolio',
+    htmlAttrs: {
+      lang: 'en',
+    },
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'description', content: 'An example Vue application with vue-meta.' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    ]
+  },
   components: {
     Header,
     Projects,

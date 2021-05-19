@@ -2,11 +2,11 @@
   <v-app color="deep-purple">
     
     <Header />
-    <br>
-    <br>
     <NavDrawer />
+
+    <div class="h-60"></div>
     
-    <div class="body-content">
+    <div class="body-content" id="about">
       <v-col>
         <v-container class="px-0 text-right" fluid>
           <v-row class="justify-end">
@@ -93,7 +93,7 @@ export default {
 <style lang="scss">
 .body-content {
   max-width: 1250px;
-  margin: 20px auto;
+  margin: 0px auto;
   padding: 0px 25px;
 }
 

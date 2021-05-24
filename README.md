@@ -1,25 +1,10 @@
 # portfolio
 
-## Project setup
-```
-npm install
-```
+Welcome to my portfolio!
+You can visit the live site at [NathanSheryak.com](https://nathansheryak.com/).
+Feel free to contact me via my [LinkedIn](https://www.linkedin.com/in/nathan-sheryak/) or my [GitHub](https://github.com/N8ers).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# portfolio
+# Run locally
+1. clone the repo
+1. run `npm install`
+1. run `npm run serve`

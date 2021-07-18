@@ -11,18 +11,17 @@
         <v-spacer></v-spacer>
       </v-col>
     </v-row>
-    
   </div>
 </template>
 
 <script>
-import data from '../../data';
-import BlogCard from './BlogCard';
+import data from "../../data";
+import BlogCard from "./BlogCard";
 
 export default {
-  name: 'Blogs',
+  name: "Blogs",
   metaInfo: {
-    title: 'Blogs'
+    title: "Blogs"
   },
   components: {
     BlogCard
@@ -32,15 +31,14 @@ export default {
       cardsData: data.blogs
     };
   },
-  methods: { },
-  computed: { 
-    breakpoint: function () {
-      let width = this.$vuetify.breakpoint.width
+  methods: {},
+  computed: {
+    breakpoint: function() {
+      let width = this.$vuetify.breakpoint.width;
       if (width < 0 || width > 1162) {
-        return true
-      } else {
-        return false
+        return true;
       }
+      return false;
     }
   }
 };

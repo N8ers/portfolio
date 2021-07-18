@@ -7,20 +7,21 @@
         <ProjectCard :cardData="cardData" />
       </v-col>
 
-      <v-spacer v-if="breakpoint"></v-spacer>
+      <v-spacer v-if="breakpoint">
+        <v-spacer></v-spacer>
+      </v-spacer>
     </v-row>
-
   </div>
 </template>
 
 <script>
-import data from '../../data';
-import ProjectCard from './ProjectCard';
+import data from "../../data";
+import ProjectCard from "./ProjectCard";
 
 export default {
-  name: 'Projects',
+  name: "Projects",
   metaInfo: {
-    title: 'Projects'
+    title: "Projects"
   },
   components: {
     ProjectCard
@@ -30,18 +31,15 @@ export default {
       cardsData: data.projects
     };
   },
-  methods: { },
-  computed: { 
-    breakpoint: function () {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return false
-        case 'sm': return true
-        case 'md': return false
-        case 'lg': return false
-        case 'xl': return false
+  methods: {},
+  computed: {
+    breakpoint: function() {
+      let width = this.$vuetify.breakpoint.width;
+      if (width < 0 || width > 1162) {
+        return true;
       }
-      return true
+      return false;
     }
-  },
+  }
 };
 </script>

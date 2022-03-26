@@ -21,25 +21,25 @@ import BlogCard from "./BlogCard";
 export default {
   name: "Blogs",
   metaInfo: {
-    title: "Blogs"
+    title: "Blogs",
   },
   components: {
-    BlogCard
+    BlogCard,
   },
   data() {
     return {
-      cardsData: data.blogs
+      cardsData: data.blogs,
     };
   },
   methods: {},
   computed: {
-    breakpoint: function() {
+    breakpoint: function () {
       let width = this.$vuetify.breakpoint.width;
       if (width < 0 || width > 1162) {
         return true;
       }
       return false;
-    }
-  }
+    },
+  },
 };
 </script>

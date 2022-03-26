@@ -21,25 +21,25 @@ import ProjectCard from "./ProjectCard";
 export default {
   name: "Projects",
   metaInfo: {
-    title: "Projects"
+    title: "Projects",
   },
   components: {
-    ProjectCard
+    ProjectCard,
   },
   data() {
     return {
-      cardsData: data.projects
+      cardsData: data.projects,
     };
   },
   methods: {},
   computed: {
-    breakpoint: function() {
+    breakpoint: function () {
       let width = this.$vuetify.breakpoint.width;
       if (width < 0 || width > 1162) {
         return true;
       }
       return false;
-    }
-  }
+    },
+  },
 };
 </script>

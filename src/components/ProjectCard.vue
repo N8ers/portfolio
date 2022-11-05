@@ -1,8 +1,10 @@
 <template>
   <div>
-    <v-card class="mx-auto d-flex flex-column" width="350" height="350">
+    <v-card class="mx-auto d-flex flex-column" width="310" height="350">
       <v-img
         class="white--text align-end grey lighten-1"
+        aspect-ratio="1.7"
+        contain
         height="200px"
         :src="require(`@/assets/projects/${cardData.image}`)"
       >
@@ -43,3 +45,4 @@ export default {
   background-color: rgb(189, 189, 189, 0.8);
 }
 </style>
+

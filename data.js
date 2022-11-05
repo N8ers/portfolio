@@ -1,6 +1,13 @@
 export default {
   projects: [
     {
+      name: "Bill Splitter",
+      description: "A way to split bills based on income.",
+      github: "https://github.com/N8ers/bill-splitter",
+      site: "https://bill-splitter-4158a.firebaseapp.com/",
+      image: "bill-splitter.png",
+    },
+    {
       name: "Dashboard",
       description: "A landing page to organize your day.",
       github: "https://github.com/N8ers/dashboard",
@@ -109,3 +116,4 @@ export default {
     // },
   ],
 };
+

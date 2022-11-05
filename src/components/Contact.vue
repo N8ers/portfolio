@@ -1,5 +1,5 @@
 <template>
-  <div id="contact">
+  <div id="contact" class="container">
     <h1>Contact</h1>
     <p>Please reach out if you're interested in learning more about me and my work</p>
     <div class="text-center">
@@ -33,3 +33,10 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.container {
+  margin-bottom: 30px;
+}
+</style>
+

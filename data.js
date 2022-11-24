@@ -1,6 +1,13 @@
 export default {
   projects: [
     {
+      name: "Fake Store",
+      description: "",
+      github: "https://github.com/N8ers/fake-store",
+      site: "https://fake-store-c67ba.web.app/",
+      image: "fake-store.png",
+    },
+    {
       name: "Bill Splitter",
       description: "A way to split bills based on income.",
       github: "https://github.com/N8ers/bill-splitter",

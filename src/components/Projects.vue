@@ -6,6 +6,7 @@
       <v-col class="d-md-flex justify-left" v-for="cardData in cardsData" :key="cardData.name">
         <ProjectCard :cardData="cardData" />
       </v-col>
+      <!-- <v-spacer /> -->
     </v-row>
   </div>
 </template>
@@ -31,3 +32,4 @@ export default {
   computed: {},
 };
 </script>
+

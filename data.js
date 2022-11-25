@@ -2,7 +2,8 @@ export default {
   projects: [
     {
       name: "Fake Store",
-      description: "",
+      description:
+        "Have you ever wanted the electrifying buzz of ordering things online, but don't want to actually pay? Visit the Fake Store!",
       github: "https://github.com/N8ers/fake-store",
       site: "https://fake-store-c67ba.web.app/",
       image: "fake-store.png",
@@ -28,27 +29,15 @@ export default {
       site: "https://brewster-c62ae.firebaseapp.com/",
       image: "brewster.png",
     },
-    {
-      name: "Vue Electron Weather",
-      description: "An electron weather app to check the forcast.",
-      github: "https://github.com/N8ers/vue-electron-weather",
-      // site: 'https://brewster-c62ae.firebaseapp.com/',
-      image: "vue-elec-weather.png",
-    },
+    // keep this one off prjects - until we have an even number again
     // {
-    //   name: "Chat App",
-    //   description: "Chat with your friends using this real time chat app",
-    //   github: "",
-    //   site: "",
-    //   image: "dashboard.png",
+    //   name: "Vue Electron Weather",
+    //   description: "An electron weather app to check the forcast.",
+    //   github: "https://github.com/N8ers/vue-electron-weather",
+    //   // site: 'https://brewster-c62ae.firebaseapp.com/',
+    //   image: "vue-elec-weather.png",
     // },
-    // {
-    //   name: 'HTMLgenerator',
-    //   description: 'Use a simple text editor to generate styled HTML',
-    //   github: '',
-    //   site: '',
-    //   image: 'dashboard.png',
-    // },
+
     // {
     //   name: 'Browser eq',
     //   description: 'Import an audio file, and make some custom eq',
